@@ -1,8 +1,11 @@
-import 'package:complete_flutter_bootcamp/IAmPoor/lAmPoor.dart';
-import 'package:complete_flutter_bootcamp/IAmRich/lAmRich.dart';
-import 'package:complete_flutter_bootcamp/MiCard/layoutChallange.dart';
-import 'package:complete_flutter_bootcamp/MiCard/miCard.dart';
+import 'package:complete_flutter_bootcamp/Projects/Dicee/dice.dart';
+import 'package:complete_flutter_bootcamp/Projects/Magic8Ball/magic8ball.dart';
 import 'package:flutter/material.dart';
+
+import 'Projects/IAmPoor/lAmPoor.dart';
+import 'Projects/IAmRich/lAmRich.dart';
+import 'Projects/MiCard/layoutChallange.dart';
+import 'Projects/MiCard/miCard.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -15,14 +18,14 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
           title: const Text("Home Page"),
         ),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
             children: [
               ElevatedButton(
                 onPressed: () {
@@ -76,7 +79,35 @@ class _HomePageState extends State<HomePage> {
                   );
                 },
                 child: const Text("MiCard"),
-              )
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Dice(),
+                    ),
+                  );
+                },
+                child: const Text("Dicee"),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Magic8Ball(),
+                    ),
+                  );
+                },
+                child: const Text("Magic 8 Ball"),
+              ),
             ],
           ),
         ),
