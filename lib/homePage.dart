@@ -1,5 +1,7 @@
 import 'package:complete_flutter_bootcamp/Projects/Dicee/dice.dart';
 import 'package:complete_flutter_bootcamp/Projects/Magic8Ball/magic8ball.dart';
+import 'package:complete_flutter_bootcamp/Projects/Quezzler/quezzler.dart';
+import 'package:complete_flutter_bootcamp/Projects/Xylophone/xylophone.dart';
 import 'package:flutter/material.dart';
 
 import 'Projects/IAmPoor/lAmPoor.dart';
@@ -20,7 +22,9 @@ class _HomePageState extends State<HomePage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.blue.shade200,
         appBar: AppBar(
+          backgroundColor: Colors.blue.shade800,
           centerTitle: true,
           title: const Text("Home Page"),
         ),
@@ -38,9 +42,6 @@ class _HomePageState extends State<HomePage> {
                 },
                 child: const Text("I Am Rich"),
               ),
-              const SizedBox(
-                height: 5,
-              ),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -51,9 +52,6 @@ class _HomePageState extends State<HomePage> {
                   );
                 },
                 child: const Text("I Am Poor"),
-              ),
-              const SizedBox(
-                height: 5,
               ),
               ElevatedButton(
                 onPressed: () {
@@ -66,9 +64,6 @@ class _HomePageState extends State<HomePage> {
                 },
                 child: const Text("Layout Challange"),
               ),
-              const SizedBox(
-                height: 5,
-              ),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -79,9 +74,6 @@ class _HomePageState extends State<HomePage> {
                   );
                 },
                 child: const Text("MiCard"),
-              ),
-              const SizedBox(
-                height: 5,
               ),
               ElevatedButton(
                 onPressed: () {
@@ -94,9 +86,6 @@ class _HomePageState extends State<HomePage> {
                 },
                 child: const Text("Dicee"),
               ),
-              const SizedBox(
-                height: 5,
-              ),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -107,6 +96,28 @@ class _HomePageState extends State<HomePage> {
                   );
                 },
                 child: const Text("Magic 8 Ball"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Xylophone(),
+                    ),
+                  );
+                },
+                child: const Text("Xylophone"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const QuezzlerPage(),
+                    ),
+                  );
+                },
+                child: const Text("Quezzler"),
               ),
             ],
           ),
