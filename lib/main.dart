@@ -1,4 +1,4 @@
-import 'package:complete_flutter_bootcamp/Projects/Quezzler/quezzler.dart';
+import 'package:complete_flutter_bootcamp/Projects/Destini/destiniPage.dart';
 import 'package:complete_flutter_bootcamp/homePage.dart';
 import 'package:flutter/material.dart';
 

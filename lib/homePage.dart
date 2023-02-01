@@ -1,3 +1,4 @@
+import 'package:complete_flutter_bootcamp/Projects/Destini/destiniPage.dart';
 import 'package:complete_flutter_bootcamp/Projects/Dicee/dice.dart';
 import 'package:complete_flutter_bootcamp/Projects/Magic8Ball/magic8ball.dart';
 import 'package:complete_flutter_bootcamp/Projects/Quezzler/quezzler.dart';
@@ -118,6 +119,17 @@ class _HomePageState extends State<HomePage> {
                   );
                 },
                 child: const Text("Quezzler"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const DestiniPage(),
+                    ),
+                  );
+                },
+                child: const Text("Destini"),
               ),
             ],
           ),
