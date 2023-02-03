@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/bmiCalculator',
+      initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
         '/iAmRich': (context) => const IAmRich(),

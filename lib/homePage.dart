@@ -76,6 +76,12 @@ class _HomePageState extends State<HomePage> {
                 },
                 child: const Text("Destini"),
               ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/bmiCalculator');
+                },
+                child: const Text("BMI Calculator"),
+              ),
             ],
           ),
         ),
