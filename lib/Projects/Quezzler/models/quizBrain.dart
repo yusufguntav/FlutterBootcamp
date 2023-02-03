@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:complete_flutter_bootcamp/Projects/Quezzler/models/question.dart';
+import 'package:flutter/cupertino.dart';
 
 class QuizBrain {
   int _questionIndexNumber = 0;
@@ -18,13 +19,17 @@ class QuizBrain {
   }
 
   Question GetQuestion() {
-    print(_questionIndexNumber);
+    debugPrint(
+      _questionIndexNumber.toString(),
+    );
 
     return _questions[_questionIndexNumber];
   }
 
   bool GetCorrectAnswer() {
-    print(_questionIndexNumber);
+    debugPrint(
+      _questionIndexNumber.toString(),
+    );
     return _questions[_questionIndexNumber].questionAnswer;
   }
 

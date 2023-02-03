@@ -1,14 +1,4 @@
-import 'package:complete_flutter_bootcamp/Projects/Destini/destiniPage.dart';
-import 'package:complete_flutter_bootcamp/Projects/Dicee/dice.dart';
-import 'package:complete_flutter_bootcamp/Projects/Magic8Ball/magic8ball.dart';
-import 'package:complete_flutter_bootcamp/Projects/Quezzler/quezzler.dart';
-import 'package:complete_flutter_bootcamp/Projects/Xylophone/xylophone.dart';
 import 'package:flutter/material.dart';
-
-import 'Projects/IAmPoor/lAmPoor.dart';
-import 'Projects/IAmRich/lAmRich.dart';
-import 'Projects/MiCard/layoutChallange.dart';
-import 'Projects/MiCard/miCard.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -34,100 +24,55 @@ class _HomePageState extends State<HomePage> {
             children: [
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const IAmRich(),
-                    ),
-                  );
+                  Navigator.pushNamed(context, '/iAmRich');
                 },
                 child: const Text("I Am Rich"),
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const IAmPoor(),
-                    ),
-                  );
+                  Navigator.pushNamed(context, '/iAmPoor');
                 },
                 child: const Text("I Am Poor"),
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const LayoutChallange(),
-                    ),
-                  );
+                  Navigator.pushNamed(context, '/layoutChallange');
                 },
                 child: const Text("Layout Challange"),
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const MiCard(),
-                    ),
-                  );
+                  Navigator.pushNamed(context, '/miCard');
                 },
                 child: const Text("MiCard"),
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const Dice(),
-                    ),
-                  );
+                  Navigator.pushNamed(context, '/dicee');
                 },
                 child: const Text("Dicee"),
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const Magic8Ball(),
-                    ),
-                  );
+                  Navigator.pushNamed(context, '/magic8ball');
                 },
                 child: const Text("Magic 8 Ball"),
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Xylophone(),
-                    ),
-                  );
+                  Navigator.pushNamed(context, '/xylophone');
                 },
                 child: const Text("Xylophone"),
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const QuezzlerPage(),
-                    ),
-                  );
+                  Navigator.pushNamed(context, '/quezzler');
                 },
                 child: const Text("Quezzler"),
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const DestiniPage(),
-                    ),
-                  );
+                  Navigator.pushNamed(context, '/destini');
                 },
                 child: const Text("Destini"),
               ),
